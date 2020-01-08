@@ -13,15 +13,16 @@ html {
     font-family: 'Fira Sans Condensed', sans-serif;
     letter-spacing: 3px;
     font-size: 13px;
-}
-.navbar-expand-lg .navbar-nav {
-    align-items: right;
+    margin-left: auto;
 }
 .navbar-nav a{
     color: black;
 }
 .navbar-light .navbar-nav .nav-link {
     color: black;
+}
+.navbar ul{
+    margin-left: auto;
 }
 .logo {
     background-image: url("../images/logo.png");
@@ -128,8 +129,6 @@ a:hover {
 .portfolio_content {
     margin-top: 50px;
     margin-bottom:50px;
-    margin-right:180px;
-    margin-left:180px;
 }
 .portfolio_content img {
     width: 100%;
@@ -196,7 +195,7 @@ button {
 }
 .skills-grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
     flex-direction: column;
 }
@@ -349,5 +348,15 @@ button:hover {
     }
     .portfolio_content .col-sm-12 {
         padding-bottom: 10px;
+    }
+    .portfolio_content img {
+        width: 100%;
+        height: auto;
+    }
+    .skills-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+        flex-direction: column;
     }
   }

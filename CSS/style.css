@@ -1,10 +1,29 @@
 html {
     font-family: 'Fira Sans Condensed', sans-serif;
 }
-.nav_section {
-    margin-top: 90px;
+.bg-light {
+    background-color: white !important;
 }
-.nav {
+.navbar-brand img {
+    width:75px;
+    height: 75px;
+}
+.navbar {
+    height: 75px;    
+    font-family: 'Fira Sans Condensed', sans-serif;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+.navbar-expand-lg .navbar-nav {
+    align-items: right;
+}
+.navbar-nav a{
+    color: black;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+/*.nav {
     display: flex;
     width: 100%;
     align-items: center;
@@ -13,7 +32,7 @@ html {
     top:0;
     background-color: white;
     opacity: 90%;
-}
+}*/
 .logo {
     background-image: url("../images/logo.png");
     height:75px;

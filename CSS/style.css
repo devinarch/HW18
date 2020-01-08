@@ -2,7 +2,7 @@ html {
     font-family: 'Fira Sans Condensed', sans-serif;
 }
 .bg-light {
-    background-color: white !important;
+  background-color: white !important;
 }
 .navbar-brand img {
     width:75px;
@@ -23,16 +23,6 @@ html {
 .navbar-light .navbar-nav .nav-link {
     color: black;
 }
-/*.nav {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    margin-block-start: 0;
-    position: fixed;
-    top:0;
-    background-color: white;
-    opacity: 90%;
-}*/
 .logo {
     background-image: url("../images/logo.png");
     height:75px;
@@ -48,6 +38,7 @@ html {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-left: auto;
 }
 .nav_links a {
     text-decoration: none;
@@ -74,15 +65,16 @@ a:hover {
     margin-block-start: 0;
 }
 .jumbotron {
-    background-color: #d8d5e9;
+    background-color: #c7bddf;
     font-family: 'Fira Sans Condensed', sans-serif;
     letter-spacing: 3px;
     height: 450px;
     background-image: url("../images/me.png");
+    background-repeat: repeat-y;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    }
+}
 .display-4 {
     font-weight: 500;
     margin-left: 100px;
@@ -138,6 +130,10 @@ a:hover {
     margin-bottom:50px;
     margin-right:180px;
     margin-left:180px;
+}
+.portfolio_content img {
+    width: 100%;
+    height: auto;
 }
 .portfolio_content h2{
     font-size: 16px;
@@ -200,9 +196,13 @@ button {
 }
 .skills-grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-content: center;
     flex-direction: column;
+}
+.col img{
+    width: 100%;
+    height: auto;
 }
 .skills h2 {
     font-size: 16px;
@@ -332,3 +332,22 @@ button:hover {
     text-decoration: none;
     color: white;
 }
+@media only screen and (max-width: 700px) {
+    #navbarNavDropdown {
+        background-color:#86d1d2;
+        padding: 20px;
+    }
+    .blockquote {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom:20px;
+        font-size: 14px;
+    }
+    .portfolio_content .row {
+        padding: 0 !important;
+    }
+    .portfolio_content .col-sm-12 {
+        padding-bottom: 10px;
+    }
+  }
